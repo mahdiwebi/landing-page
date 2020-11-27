@@ -11,7 +11,7 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 <!-- font awsome CDN-->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <!-- css main files -->
 
@@ -23,16 +23,7 @@
 
 
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="
-
-sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
-<script src="js/custom.js"></script>
 
 
 <body>
@@ -44,8 +35,9 @@ sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossor
 <div class="container">
 
 
+ <a class="navbar-brand" href="#">Aruidno dragon</a>
+
 <!-- logo -->
-  <a class="navbar-brand" href="#">Aruidno dragon</a>
 
   <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -55,16 +47,25 @@ sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossor
     <ul class="navbar-nav ml-auto">
 
       <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" data-value='home' href="#">Home <span class="sr-only">(current)</span></a>
       </li>
 
       <li class="nav-item">
-        <a class="nav-link" href="#">products</a>
+        <a class="nav-link" data-value='prices' href="#">products</a>
       </li>
 
        <li class="nav-item">
-        <a class="nav-link" href="#">contact</a>
+        <a class="nav-link" data-value='contacting'href="#">contact</a>
       </li>
+
+
+      <li class="nav-item">
+        <a class="nav-link" data-value='about' href="#">About</a>
+      </li>
+
+
+
+
 
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -91,17 +92,22 @@ sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossor
 <!-- end nav bar -->
 
 
-<section id="">
+<section id="header">
+
+	
+
 	<div class="container">
 		<div class="row header-content">
 			<div class="col-md-6">
-				<h1>SHOW OFF YOUR ARDUINO PROJECT</h1>
+				<h1>SHOW OFF YOUR <br>ARDUINO PROJECT</h1>
 				<p>The ever-growing Arduino community is made up of everyone from hobbyists and students to designers and engineers all across the world</p>
 
 			
 			<div class="header-button">
 
-				<a href="#" class="btn btn-outline-primary">show more</a>
+				<a href="#" class="btns btns-outline-primary">show more</a>
+
+				<a href="#" class="btns btns-outline-primary">learn more</a>
 			</div>
 			</div>
 
@@ -115,8 +121,294 @@ sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossor
 
 	</div>
 
+
 </section>
 
 
+<!--- About section -->
+
+<section id="about">
+	
+	<div class="container">
+
+		       <div class="row section-title justify-content-center">
+		        <h1 class="section-title-heading"> About us</h1>
+		       </div>
+
+		       <div class="row justify-content-center text-center mt-5">
+		        <div class="col-md-4">
+                   <i class="fa fa-cog fa-3x mb-3"  > </i>
+                   <h2>  The Internet of Things</h2>
+                   <p> Take control  add smart technology to your home and workplace with the first open programmable IoT platform that allows you to build custom IoT devices</p>
+
+                   </div>
+ 
+                   <div class="col-md-4">
+                   	
+                         <i class="fa fa-eye fa-3x mb-3"  > </i>
+                   <h2> machine vision</h2>
+                   <p> We’re excited to announce the launch of the Arduino Portenta Vision Shield, a production-ready powerful Arduino Portenta H7 that adds a low-power camera, two microphones, and connectivity</p>
+
+                   </div>
+                  
+                   <div class="col-md-4">
+                   	
+                   	 <i class="fa fa-database fa-3x mb-3"  > </i>
+                   <h2> cellular connectivity</h2>
+                   <p> Monitor and control your devices anytime, anywhere with Arduino IOT Cloud*. Arduino SIM is ideal for connected devices on the go, or in areas without reliable WiFi.</p>
+                   </div>
+
+		       </div>
+
+            
+	</div>
+</section>
+
+
+
+<!--- donwloads section ---> 
+
+
+<section id="download">
+	
+
+<div class="container">
+	
+	<div class="row download-title justify-content-center">
+		<h1>Download IDE</h1>
+		<p> Get the latest version from the download page. You can choose between the Installer (.exe) and the Zip packages. We suggest you use the first one that installs directly everything you need to use the Arduino Software (IDE), including the drivers. With the Zip package you need to install the drivers manually </p>
+		<div class="download-btns">
+			<a href="https://www.arduino.cc/en/software" class="btns">Download<i class="fa fa-download fa-1x "></i></a>
+			
+
+		</div>
+
+
+	</div>
+</div>
+
+</section>
+
+
+
+<!---------   pricing section    -------------->
+
+
+<section id="prices">
+
+<div class="container">
+	
+<div class="row section-title justify-content-center">
+	<h1 class="section-title-heading"> products</h1>
+ </div>
+
+ <div class="row justify-content-center text-center mt-5">
+
+ <div class="col-lg-3 card m-3 p-2">
+                   
+  
+  <img src="assets/pack1.jpg">
+  <h2>Basic</h2>
+  <div class="card-body">
+    <h5 class="card-title">€16.90</h5>
+    <h7>ARDUINO MKR CONNECTOR</h7>
+    <p class="card-text">
+    	<span>Code: ASX00007</span>
+    	<span>Barcode: 7630049200272</span>
+    </p>
+    <a href="#" class="btnx btnx-success">Add to cart</a>
+  </div>
+
+
+  </div>
+
+
+   
+ <div class="col-lg-3 card m-3 p-2">
+                   
+  
+  <img src="assets/pack2.jpg">
+  <h2>Standard</h2>
+  <div class="card-body">
+    <h5 class="card-title">€21.50</h5>
+    <h7>ARDUINO ETHERNET SHIELD</h7>
+    <p class="card-text">
+    	<span>Code: A000024</span>
+    	<span>Barcode: 7630049200364</span>
+    </p>
+    <a href="#" class="btnx btnx-success">Add to cart</a>
+  </div>
+
+
+  </div>                
+              
+
+
+                  
+	
+ <div class="col-lg-3 card m-3 p-2">
+                   
+  
+  <img src="assets/pack3.jpg">
+  <h2>Premium</h2>
+  <div class="card-body">
+    <h5 class="card-title">€27.90</h5>
+    <h7>ARDUINO MKR WIFI 1010</h7>
+    <p class="card-text">
+    	<span>Code: ABX00023</span>
+    	<span>Barcode: 7630049200258</span>
+    </p>
+    <a href="#" class="btnx btnx-success">Add to cart</a>
+  </div>
+  </div>
+
+
+   
+  </div>
+  </div>	
+
+</section>
+
+
+
+
+<section id="contacting">
+
+
+  <div class="row section-title justify-content-center">
+  <h1 class="section-title-heading"> Get in touch </h1>
+ </div>
+	
+<div class="container">
+	
+
+
+ <div class="row justify-content-center text-center mt-5">
+
+
+ 	<div class="row mt-5">
+ 		<div class="col md-8">
+             <div class="contact-form">
+
+             	<form action="#">
+
+             		<div class="row">
+             			<div class="col-md-6">
+             				<input type="text" class="form-control" placeholder="enter your name">
+
+             				
+             			</div>
+
+
+             			<div class="col-md-6">
+             				<input type="email" class="form-control" placeholder="enter your address">
+             				
+             				
+             			</div>
+             			</div>
+
+             			<div class="form-group">
+
+       
+
+             				<textarea class='mt-4 col-md-12' name="" id="" cols="47" rows="6" class="form-control" placeholder="enter your msg"></textarea>
+             				
+
+             			</div>
+
+
+
+             		<button  type="submit" class="btn-contact">send</button>
+             		
+             	</form>
+             	
+
+             </div>			
+ 
+
+ 		</div>
+
+
+ 		<div class="col-md-4">
+ 			
+ 			<
+ 			<div class="contacting-details">
+
+ 				<ul>
+
+ 				  <li>
+ 				  	<span>
+ 				  		<i class="fa fa-phone fa-1.5x"></i>
+ 				  	</span> +1 264 783 974
+ 				  </li>
+
+ 				    <li>
+ 				    	<span><i class="fa fa-map-marker" aria-hidden="true"></i></span> 3852  Kidd Avenue
+ 				    </li>
+
+
+ 				      <li>
+ 				      	<span><i class="fa fa-envelope" aria-hidden="true"></i></span> arduino@outlook.com</li>
+
+
+                 </ul>
+
+ 			</div>
+
+ 		</div>
+ 		
+ 	</div>
+ </div>
+
+
+
+
+
+
+</div>
+</section>
+
+
+
+<section id="footer">
+  
+  
+<div class="container">
+  <div class="row">
+         
+         <div class="col-md-12 text-center">
+ 
+       <div class="social-media">
+      
+      <i class="fa fa-facebook fa-1x"></i>
+
+      <i class="fa fa-instagram fa-1x"></i>
+      <i class="fa fa-twitter fa-1x" aria-hidden="true"></i>
+      </div>
+     
+     </div>
+
+    
+
+      
+      
+
+
+  </div>
+  
+
+</div>
+
+</section>
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<script src="js/custom.js"></script>
 </body>
 </html>

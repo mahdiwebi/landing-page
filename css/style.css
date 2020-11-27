@@ -4,9 +4,19 @@
 
 
 :root {
- --main-color : black;
- --body-color : white;
- --section-color : yellow;
+
+ --main-color-light :#017e8a;	
+ --main-color : rgba(3, 100, 109);
+ --switch-color : white;
+ --section-color : rgba(3, 100, 109);
+ --body-color: black;
+ --gradient-colors :linear-gradient(
+   	to right,
+   	rgba(3, 100, 109,0.8),
+   	rgba(3, 76, 117,0.8)
+   	); 
+
+ /*#007bff*/
 }
 
 * {
@@ -16,5 +26,531 @@
 }
 
 body {
+	 
 	font-family: 'Roboto' , 'sans-serif' ;
+	overflow-x: hidden;
+	background-color: var(--body-color)
+	
+}
+
+
+
+
+.btns{
+	border: 2px solid white;
+	border-radius:  1.2rem;
+    text-transform: lowercase;
+	font-size: 1rem;
+	padding-left: 2rem;
+	padding-right: 2rem;
+	background-color: transparent;
+	color: #FFF;
+	padding: 0.5rem 2rem;
+	text-decoration: none;
+
+
+
+}
+
+
+.btns:hover {
+	background-color: #FFFF;
+	color: var(--main-color);
+	border: none;
+	text-decoration: none;
+}
+
+
+/** second type of btn work opn lighten backgrounds **/
+
+
+.btnx {
+
+	border: 2px solid white;
+	border-radius:  1.2rem;
+    text-transform: lowercase;
+	font-size: 1rem;
+	padding-left: 2rem;
+	padding-right: 2rem;
+	background-color: var(--main-color);
+	color: #FFF;
+	padding: 0.5rem 2rem;
+	text-decoration: none;
+}
+
+
+.btnx:hover {
+
+	background-color: #FFFF;
+	color: var(--main-color);
+	border-color:var(--main-color) ;
+	text-decoration: none;
+}
+
+/************** section title ***********/
+
+
+
+
+.section-title {
+	position: relative;
+
+
+}
+
+
+
+.section-title h1{
+
+	color: var(--switch-color);
+	padding-top:2rem;
+	text-transform: uppercase;
+	font-size: 1.8rem;
+
+}
+
+.section-title::after {
+  
+  content:'';
+  position: absolute;
+  border-bottom: 2px solid var(--main-color-light);
+  width: 8%;
+
+
+}
+
+
+.section-title:hover::after {
+  
+ width: 15%;
+ -webkit-transition: all 0.6s ease-in-out;
+ -moz-transition: all 0.6s ease-in-out;
+transition: all 0.6s ease-in-out;
+}
+
+/* *********  navigation         *****************/ 
+.nav-logo {
+ 
+ margin-bottom: 3rem;
+
+}
+.navbar {
+	padding-top: 0.2rem;
+	
+	display: block;
+      
+    background-color: transparent !important;
+
+}
+
+
+.active {
+ 
+ background-image: linear-gradient(
+   	to right,
+   	rgba(3, 100, 109,0.8),
+   	rgba(3, 100, 109,0.95)
+   	) !important;
+
+}
+
+.navbar .navbar-brand {
+
+	color: #FFF;
+}
+
+.navbar-light .navbar-nav .nav-link {
+	
+	text-transform: uppercase;
+
+	font-size: .85rem;
+	color: #FFF;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+	color: var(--switch-color);
+}
+
+
+/***********    header  **************/
+
+#header {
+
+     
+     background-size: cover;
+     background-repeat: no-repeat;
+     position: relative;
+     padding-top: 3rem;
+     padding-bottom: 2rem;
+
+   background-image: linear-gradient(
+   	to right,
+   	rgba(3, 100, 109,0.8),
+   	rgba(3, 100, 109,0.95)
+   	) , url('../assets/header.png');
+
+}
+
+/* the line chart*/
+#header::after {
+ 
+ content: '';
+ position: absolute;
+ background-color: var(--body-color);
+ width: 100%;
+ height: 15%;
+ transform: skewY(-2deg);
+ transform-origin: bottom right;
+ bottom: 0;
+ right: 0;
+ left: 0;
+
+}
+
+
+.header-content h1 {
+	margin-top: 1.5rem;
+    color:#FFF;
+	text-transform: uppercase;
+	letter-spacing: .11rem;
+	font-size: 3rem
+}
+
+.header-content p {
+	color: #FFF;
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+	line-height: 1.7rem;
+	font-size: 1rem
+	
+}
+
+
+
+
+/************ About  *****************/
+
+#about {
+position: relative;
+padding-bottom: 8rem;
+
+}
+#about i {
+	color: var(--main-color);
+}
+
+#about h2 {
+	
+	color: var(--main-color-light);
+	font-size: 1.2rem;
+	text-transform: uppercase;
+	font-weight: 600;
+
+}
+
+#about p {
+	color:var(--switch-color);
+	font-size: 1rem;
+	line-height: 1.7rem
+}
+
+
+
+/*********     download section  ******/
+
+#download {
+
+background-size: cover;
+     background-repeat: no-repeat;
+     position: relative;
+     padding-bottom: 2rem;
+     margin-bottom: 2rem;
+
+   background-image: linear-gradient(
+   	to right,
+   	rgba(3, 100, 109,0.8),
+   	rgba(3, 100, 109,0.95)
+   	) , url('../assets/header.png');
+
+}
+
+
+#download::before {
+ 
+ content: '';
+ position: absolute;
+ background-color: var(--body-color);
+ width: 100%;
+ height: 30%;
+ transform: skewY(-2deg);
+ transform-origin: top right;
+ top: -6rem;
+ right: 0;
+ left: 0;
+
+}
+
+
+#download::after {
+ 
+ content: '';
+ position: absolute;
+ background-color: var(--body-color);
+ width: 100%;
+ height: 15%;
+ transform: skewY(-2deg);
+ transform-origin: bottom right;
+ bottom: 0;
+ right: 0;
+ left: 0;
+
+}
+
+
+
+
+
+#download .download-title h1{
+	padding-top: 5rem;
+	text-transform: uppercase;
+	color: var(--body-color);
+	font-weight: 7rem;
+	text-align: center;
+}
+
+#download .download-title p {
+   
+   color: var(--body-color);
+   text-align: center;
+   font-size: 0.9rem;
+   line-height: 1.5rem;
+   margin-top: 2.3rem;
+   padding-bottom: 3rem;
+
+
+}
+
+#download .download-btns {
+
+	margin-bottom: 3rem;
+
+}
+
+
+
+#download .download-btns a {
+
+	margin-bottom: 2rem;
+
+}
+
+#download .download-btns i {
+
+	padding: 0.2rem;
+
+}
+
+/*********   pricing    ***************/ 
+
+#prices {
+
+	margin-bottom: 5rem
+}
+
+#prices h7 {
+
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+
+
+#prices span {
+
+	text-align: center;
+	display: block;
+	padding: 0.2rem 0 ;
+	font-size: 0.9rem;
+}
+
+
+#prices .btnx {
+
+	margin: 2rem 0 ;
+}
+
+
+
+#prices .card{
+     border-radius: 1rem;
+	border: 2px solid var(--main-color);
+	transition: all 0.5s ease;
+
+
+
+}
+
+
+#prices .card:hover{
+
+	box-shadow: 5px 7px 6px 1px rgba(132,196,204,1);
+}
+
+
+/*********** contact ***************/
+
+#contacting {
+
+
+
+	background-image: linear-gradient(
+   	to right,
+   	rgba(3, 100, 109,0.8),
+   	rgba(3, 100, 109,0.95)
+   	) , url('../assets/header.png');
+
+  
+
+   position: relative;  
+
+  padding-bottom: 7rem;
+
+
+}
+
+#contacting::before {
+ 
+ content: '';
+ position: absolute;
+ background-color: var(--body-color);
+
+ width: 100%;
+ height: 30%;
+ transform: skewY(-2deg);
+ transform-origin: top right;
+ top: -6rem;
+ right: 0;
+ left: 0;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.btn-contact {
+background:transparent;
+    border: 2px solid #FFF;
+	border-radius:  1.2rem;
+    text-transform: lowercase;
+	font-size: 1rem;
+	padding-left: 2rem;
+	padding-right: 2rem;
+	color: #FFF;
+	padding: 0.5rem 3rem;
+	text-decoration: none;
+}
+
+
+.btn-contact:hover {
+
+	background: #dadada;
+
+	color: var(--main-color);
+
+	border-color:var(--main-color);
+	
+}
+
+
+#contacting input {
+
+	background-color: transparent;
+	color: var(--body-color)
+}
+
+#contacting input [placeholder]{
+
+	
+	color: var(--body-color)
+}
+
+
+#contacting textarea {
+
+	background-color: transparent;
+}
+
+
+#contacting .contacting-details ul li {
+	padding-bottom: 2rem;
+	text-decoration: none;
+	list-style: none;
+	color: #FFF;
+
+}
+
+
+#contacting .contacting-details ul li i{
+	
+	color: #FFF;
+}
+
+
+
+/*********** footer **************/
+
+#footer {
+
+ 
+
+	padding-top: 1.5rem;
+
+	position: relative;
+
+	align-items: center; 
+
+ background:#1e2832;
+
+
+
+	padding-bottom: 1rem;
+
+
+}
+
+
+
+
+
+
+
+
+#footer .social-media i{
+
+text-align: center;
+
+margin: 0 0.8rem;
+
+color: #FFF;
+
+font-size: 1.5rem;
+transition: all 0.5s ease-in-out;
+
+
+
+}
+
+#footer .social-media i:hover{
+
+font-size: 1.8rem;
+
+color: var(--main-color-light)
+
 }
